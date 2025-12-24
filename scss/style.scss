@@ -273,14 +273,15 @@
 }
 
 .tenten_20251224 .hero-domain {
-    margin-top: 50px;
+    margin-top: 10px;
+    width: 860px;
+    padding: 40px 10px;
 
-    width: 950px;
     &__list {
-        display: flex;
-        gap: 30px;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        // display: flex;
+        // gap: 20px;
+        // display: grid;
+        // grid-template-columns: repeat(6, 1fr);
     }
 }
 
@@ -338,7 +339,7 @@
 }
 
 .tenten_20251224 .hero-promotion {
-    margin-top: 70px;
+    margin-top: 30px;
     display: flex;
     gap: 40px;
 
