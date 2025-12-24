@@ -1,5 +1,129 @@
 @import "reset";
-@import "base";
-@import "utils";
-@import "mixins";
 @import "variables";
+@import "mixins";
+@import "utils";
+@import "base";
+
+.tenten_20251224 {
+    position: relative;
+}
+
+.tenten_20251224 .header {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    &__inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__left {
+        margin-left: 45px;
+    }
+
+    &__logo-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__logo {
+        cursor: pointer;
+    }
+
+    &__logo-second {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    &__right {
+        display: flex;
+        gap: 30px;
+        margin-left: auto;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        height: 53px;
+        padding: 0px 17px;
+        border-radius: 100px 0 0 100px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+        border: 2.35px solid;
+        border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.29) 0%, rgba(241, 242, 246, 0) 100%);
+        box-shadow: 0px -3.52px 18.89px 0px #4487fa2e;
+        backdrop-filter: blur(35.20000076293945px);
+    }
+
+    &__cart {
+        position: relative;
+    }
+
+    &__cart-count {
+        position: absolute;
+        top: 0;
+        right: -5px;
+        padding: 0px 4px;
+        border-radius: 100px;
+        background-color: #DF1111;
+        font-size: 10px;
+        font-weight: 500;
+        color: #fff;
+        height: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__lang {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+
+        & span {
+            color: #fff;
+            font-weight: 500;
+        }
+    }
+}
+
+.header-navbar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &__list {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #fff;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 100px;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        &:hover {
+            background: #ffffff26;
+        }
+    }
+}
+
+.tenten_20251224 .hero {
+    background: url(../images/background-hero.png) no-repeat;
+    background-size: cover !important;
+    padding: 120px 0px;
+    border-radius: 0px 0px 40px 40px;
+}

@@ -20,7 +20,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
             rel="stylesheet"
         />
         <!-- css -->
@@ -35,9 +35,9 @@
                 <div class="header__inner">
                     <div class="header__left">
                         <div class="header__logo-wrap">
-                            <img src="./images/logo-tenten.svg" alt="" />
-                            <img src="./images/img-header-1.svg" alt="" />
-                            <img src="./images/img-header-2.svg" alt="" />
+                            <a class="header__logo" href="/"> <img src="./images/logo-tenten.svg" alt="" /></a>
+                            <img class="header__logo-second" src="./images/img-header-1.svg" alt="" />
+                            <img class="header__logo-second" src="./images/img-header-2.svg" alt="" />
                         </div>
                     </div>
                     <div class="header-navbar">
@@ -59,18 +59,25 @@
                         </ul>
                     </div>
                     <div class="header__right">
-                        <img src="./images/img-header-3.png" alt="" />
+                        <a href="#"><img src="./images/img-header-3.png" alt="" /></a>
                         <div class="header__actions">
-                            <a class="header__user"></a>
-                            <a class="header-cart"></a>
-                            <div class="header__lang"></div>
+                            <a class="header__cart">
+                                <img src="./images/cart.svg" alt="" />
+                                <span class="header__cart-count">03</span>
+                            </a>
+                            <a class="header__user">
+                                <img src="./images/user.svg" alt="" />
+                            </a>
+                            <div class="header__lang">
+                                <img src="./images/flag-vietnam.png" alt="" />
+                                <span>VN</span>
+                                <img src="./images/Vector-down.svg" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </header>
-            <section class="hero" style="height: 1000px;">
-
-            </section>
+            <section class="hero" style="height: 800px"></section>
         </div>
 
         <script src="js/bootstrap.min.js"></script>
