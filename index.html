@@ -36,31 +36,38 @@
                 <div class="header__inner">
                     <div class="header__left">
                         <div class="header__logo-wrap">
-                            <a class="header__logo" href="/"> <img src="./images/logo-tenten.svg" alt="" /></a>
-                            <img class="header__logo-second" src="./images/img-header-1.svg" alt="" />
-                            <img class="header__logo-second" src="./images/img-header-2.svg" alt="" />
+                            <a class="header__logo d-lg-none" href="/"> <img src="./images/logo-tenten.svg" alt="" /></a>
+                            <a class="header__logo d-none d-lg-block" href="/"> <img src="./images/logo-tenten-mobile.svg" alt="" /></a>
+                            <img class="header__logo-second d-xxxl-none" src="./images/img-header-1.svg" alt="" />
+                            <img class="header__logo-second d-xxxl-none" src="./images/img-header-2.svg" alt="" />
+                            <img class="header__logo-second d-none d-lg-block" src="./images/img-header-mobile-1.svg" alt="" />
+                            <img class="header__logo-second d-none d-lg-block" src="./images/img-header-mobile-2.svg" alt="" />
                         </div>
                     </div>
-                    <div class="header-navbar">
+                    <div class="header-navbar d-lg-none">
                         <ul class="header-navbar__list">
-                            <li class="header-navbar__items">Tên miền <img src="./images/Vector-down.svg" alt="" /></li>
                             <li class="header-navbar__items">
-                                Hosting & Cloud <img src="./images/Vector-down.svg" alt="" />
+                                Tên miền <img class="d-xxxl-none" src="./images/Vector-down.svg" alt="" />
                             </li>
                             <li class="header-navbar__items">
-                                Email & Workspace <img src="./images/Vector-down.svg" alt="" />
+                                Hosting & Cloud <img class="d-xxxl-none" src="./images/Vector-down.svg" alt="" />
                             </li>
                             <li class="header-navbar__items">
-                                SSL & Bảo mật <img src="./images/Vector-down.svg" alt="" />
+                                Email & Workspace <img class="d-xxxl-none" src="./images/Vector-down.svg" alt="" />
                             </li>
-                            <li class="header-navbar__items">AI tools <img src="./images/Vector-down.svg" alt="" /></li>
                             <li class="header-navbar__items">
-                                Chuyển đổi số <img src="./images/Vector-down.svg" alt="" />
+                                SSL & Bảo mật <img class="d-xxxl-none" src="./images/Vector-down.svg" alt="" />
+                            </li>
+                            <li class="header-navbar__items">
+                                AI tools <img class="d-xxxl-none" src="./images/Vector-down.svg" alt="" />
+                            </li>
+                            <li class="header-navbar__items">
+                                Chuyển đổi số <img class="d-xxxl-none" src="./images/Vector-down.svg" alt="" />
                             </li>
                         </ul>
                     </div>
-                    <div class="header__right">
-                        <a href="#"><img src="./images/img-header-3.png" alt="" /></a>
+                    <div class="header__right d-lg-none">
+                        <a href="#"><img class="d-xxl-none" src="./images/img-header-3.png" alt="" /></a>
                         <div class="header__actions">
                             <a class="header__cart">
                                 <img src="./images/cart.svg" alt="" />
@@ -76,6 +83,7 @@
                             </div>
                         </div>
                     </div>
+                    <img class="header__menu-mobile d-lg-block" src="./images/menu.svg" alt="">
                 </div>
             </header>
             <section class="hero">
@@ -86,7 +94,7 @@
                             <span class="gradient">TÊN MIỀN GIÁ LUÔN TỐT</span>
                         </h1>
                         <div class="hero-search">
-                            <div class="hero-search__switch">
+                            <div class="hero-search__switch d-md-none">
                                 <div class="hero-search__switch-item current">Tìm tên miền</div>
                                 <div class="hero-search__switch-item">Tìm nhiều tên miền</div>
                             </div>
@@ -108,37 +116,39 @@
                             </div>
                         </div>
 
-                        <div class="hero-domain swiper">
-                            <div class="hero-domain__list swiper-wrapper">
-                                <div class="domain-item hot swiper-slide">
-                                    <b class="domain-item__name">.vn</b>
-                                    <span class="domain-item__sale-price">450k</span>
-                                    <del class="domain-item__rgl-price">650k</del>
-                                </div>
-                                <div class="domain-item swiper-slide">
-                                    <b class="domain-item__name">.vn</b>
-                                    <span class="domain-item__sale-price">450k</span>
-                                    <del class="domain-item__rgl-price">650k</del>
-                                </div>
-                                <div class="domain-item swiper-slide">
-                                    <b class="domain-item__name">.vn</b>
-                                    <span class="domain-item__sale-price">450k</span>
-                                    <del class="domain-item__rgl-price">650k</del>
-                                </div>
-                                <div class="domain-item swiper-slide">
-                                    <b class="domain-item__name">.vn</b>
-                                    <span class="domain-item__sale-price">450k</span>
-                                    <del class="domain-item__rgl-price">650k</del>
-                                </div>
-                                <div class="domain-item swiper-slide">
-                                    <b class="domain-item__name">.vn</b>
-                                    <span class="domain-item__sale-price">450k</span>
-                                    <del class="domain-item__rgl-price">650k</del>
-                                </div>
-                                <div class="domain-item swiper-slide">
-                                    <b class="domain-item__name">.vn</b>
-                                    <span class="domain-item__sale-price">450k</span>
-                                    <del class="domain-item__rgl-price">650k</del>
+                        <div class="hero-domain">
+                            <div class="hero-domain__inner swiper">
+                                <div class="hero-domain__list swiper-wrapper">
+                                    <div class="domain-item hot swiper-slide">
+                                        <b class="domain-item__name">.vn</b>
+                                        <span class="domain-item__sale-price">450k</span>
+                                        <del class="domain-item__rgl-price">650k</del>
+                                    </div>
+                                    <div class="domain-item swiper-slide">
+                                        <b class="domain-item__name">.vn</b>
+                                        <span class="domain-item__sale-price">450k</span>
+                                        <del class="domain-item__rgl-price">650k</del>
+                                    </div>
+                                    <div class="domain-item swiper-slide">
+                                        <b class="domain-item__name">.vn</b>
+                                        <span class="domain-item__sale-price">450k</span>
+                                        <del class="domain-item__rgl-price">650k</del>
+                                    </div>
+                                    <div class="domain-item swiper-slide">
+                                        <b class="domain-item__name">.vn</b>
+                                        <span class="domain-item__sale-price">450k</span>
+                                        <del class="domain-item__rgl-price">650k</del>
+                                    </div>
+                                    <div class="domain-item swiper-slide">
+                                        <b class="domain-item__name">.vn</b>
+                                        <span class="domain-item__sale-price">450k</span>
+                                        <del class="domain-item__rgl-price">650k</del>
+                                    </div>
+                                    <div class="domain-item swiper-slide">
+                                        <b class="domain-item__name">.vn</b>
+                                        <span class="domain-item__sale-price">450k</span>
+                                        <del class="domain-item__rgl-price">650k</del>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-button-next"></div>
@@ -153,9 +163,9 @@
                                 </div>
                                 <div class="hero-promotion__time">
                                     <div class="hero-promotion__time-item">00</div>
-                                    <div class="hero-promotion__time-item">00</div>
-                                    <div class="hero-promotion__time-item">00</div>
-                                    <div class="hero-promotion__time-item">00</div>
+                                    <div class="hero-promotion__time-item">14</div>
+                                    <div class="hero-promotion__time-item">50</div>
+                                    <div class="hero-promotion__time-item">55</div>
                                 </div>
                             </div>
                             <div class="hero-promotion__right">

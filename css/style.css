@@ -149,6 +149,20 @@ table {
   display: none !important;
 }
 
+@media (max-width: 1599.98px) {
+  .d-xxxl-block {
+    display: block !important;
+  }
+  .d-xxxl-flex {
+    display: flex !important;
+  }
+  .d-xxxl-grid {
+    display: grid !important;
+  }
+  .d-xxxl-none {
+    display: none !important;
+  }
+}
 @media (max-width: 1399.98px) {
   .d-xxl-block {
     display: block !important;
@@ -286,6 +300,11 @@ input:-webkit-autofill {
   height: 90px;
   position: absolute;
 }
+@media (max-width: 991.98px) {
+  .tenten_20251224 .header {
+    padding: 0px 20px;
+  }
+}
 .tenten_20251224 .header__inner {
   position: relative;
   width: 100%;
@@ -293,8 +312,18 @@ input:-webkit-autofill {
   display: flex;
   align-items: center;
 }
+@media (max-width: 991.98px) {
+  .tenten_20251224 .header__inner {
+    justify-content: space-between;
+  }
+}
 .tenten_20251224 .header__left {
   margin-left: 45px;
+}
+@media (max-width: 991.98px) {
+  .tenten_20251224 .header__left {
+    margin-left: 0px;
+  }
 }
 .tenten_20251224 .header__logo-wrap {
   display: flex;
@@ -355,6 +384,9 @@ input:-webkit-autofill {
   color: #fff;
   font-weight: 500;
 }
+.tenten_20251224 .header__menu-mobile {
+  display: none;
+}
 
 .header-navbar {
   position: absolute;
@@ -365,6 +397,11 @@ input:-webkit-autofill {
 .header-navbar__list {
   display: flex;
   gap: 5px;
+}
+@media (max-width: 1599.98px) {
+  .header-navbar__list {
+    gap: 0px;
+  }
 }
 .header-navbar__items {
   display: flex;
@@ -381,12 +418,27 @@ input:-webkit-autofill {
 .header-navbar__items:hover {
   background: rgba(255, 255, 255, 0.1490196078);
 }
+@media (max-width: 1599.98px) {
+  .header-navbar__items {
+    font-size: 1.4rem;
+  }
+}
 
 .tenten_20251224 .hero {
   background: url(../images/background-hero.png) no-repeat;
   background-size: cover !important;
   padding: 180px 0px;
   border-radius: 0px 0px 100px 100px;
+}
+@media (max-width: 991.98px) {
+  .tenten_20251224 .hero {
+    padding: 120px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero {
+    padding: 100px 0px;
+  }
 }
 .tenten_20251224 .hero__inner {
   display: flex;
@@ -401,6 +453,16 @@ input:-webkit-autofill {
   line-height: 140%;
   position: relative;
 }
+@media (max-width: 991.98px) {
+  .tenten_20251224 .hero__heading {
+    font-size: 4.4rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero__heading {
+    font-size: 2.4rem;
+  }
+}
 .tenten_20251224 .hero__heading::before {
   content: "";
   width: 50px;
@@ -410,6 +472,11 @@ input:-webkit-autofill {
   left: -24px;
   background-image: url(../images/star.svg);
 }
+@media (max-width: 991.98px) {
+  .tenten_20251224 .hero__heading::before {
+    background-image: none;
+  }
+}
 .tenten_20251224 .hero__heading::after {
   content: "";
   width: 50px;
@@ -418,6 +485,11 @@ input:-webkit-autofill {
   top: -10px;
   right: -35px;
   background-image: url(../images/star.svg);
+}
+@media (max-width: 991.98px) {
+  .tenten_20251224 .hero__heading::after {
+    background-image: none;
+  }
 }
 .tenten_20251224 .hero__heading .shadow {
   position: absolute;
@@ -440,6 +512,11 @@ input:-webkit-autofill {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-search {
+    margin-top: 20px;
+  }
 }
 .tenten_20251224 .hero-search__switch {
   display: inline-flex;
@@ -469,6 +546,17 @@ input:-webkit-autofill {
   border-radius: 99px;
   background-color: #fff;
   display: flex;
+}
+@media (max-width: 991.98px) {
+  .tenten_20251224 .hero-search__input-wrap {
+    width: 700px;
+    height: 54px;
+  }
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-search__input-wrap {
+    width: 100%;
+  }
 }
 .tenten_20251224 .hero-search__input {
   width: 100%;
@@ -519,15 +607,78 @@ input:-webkit-autofill {
   cursor: pointer;
   transition: all 0.25s ease;
 }
+@media (max-width: 991.98px) {
+  .tenten_20251224 .hero-search__btn {
+    width: 40px;
+    height: 40px;
+  }
+}
 .tenten_20251224 .hero-search__btn:hover {
   opacity: 0.9;
 }
 
 .tenten_20251224 .hero-domain {
   margin-top: 10px;
-  width: 860px;
+  width: 950px;
+  position: relative;
+}
+@media (max-width: 991.98px) {
+  .tenten_20251224 .hero-domain {
+    width: 700px;
+  }
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-domain {
+    width: 100%;
+  }
+}
+.tenten_20251224 .hero-domain__inner {
+  width: 850px;
   padding: 40px 10px;
 }
+@media (max-width: 991.98px) {
+  .tenten_20251224 .hero-domain__inner {
+    padding: 20px 10px;
+    width: 600px;
+  }
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-domain__inner {
+    padding: 20px 10px;
+    width: 100%;
+  }
+}
+.tenten_20251224 .hero-domain .swiper-button-next::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.6) inset, 0px 4px 40px 0px rgba(0, 10, 20, 0.6);
+  backdrop-filter: blur(30px);
+  background-image: url(../images/next.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tenten_20251224 .hero-domain .swiper-button-prev::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.6) inset, 0px 4px 40px 0px rgba(0, 10, 20, 0.6);
+  backdrop-filter: blur(30px);
+  background-image: url(../images/prev.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .tenten_20251224 .domain-item {
   display: flex;
   justify-content: center;
@@ -541,6 +692,7 @@ input:-webkit-autofill {
   backdrop-filter: blur(15px);
   background-color: rgba(0, 66, 255, 0.15);
   border: 2px solid transparent;
+  cursor: pointer;
 }
 .tenten_20251224 .domain-item:hover {
   border: 2px solid #44afff;
@@ -623,7 +775,7 @@ input:-webkit-autofill {
   position: absolute;
   bottom: -25px;
   display: flex;
-  gap: 10px;
+  gap: 16px;
 }
 .tenten_20251224 .hero-promotion__time-item {
   display: flex;
@@ -635,6 +787,19 @@ input:-webkit-autofill {
   font-size: 1.8rem;
   background-color: #fff;
   border-radius: 50%;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 4px 40px 0px rgba(58, 146, 255, 0.74);
+  position: relative;
+}
+.tenten_20251224 .hero-promotion__time-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/colon.svg);
+  background-repeat: no-repeat;
+  right: -26px;
+  top: 20px;
+  height: 20px;
+  width: 20px;
 }
 .tenten_20251224 .hero-promotion__right {
   position: relative;
