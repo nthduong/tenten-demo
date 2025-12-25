@@ -109,17 +109,36 @@
                         <div class="container">
                             <div class="hero-search__inner">
                                 <div class="hero-search__switch d-md-none">
-                                    <div class="hero-search__switch-item current">Tìm tên miền</div>
-                                    <div class="hero-search__switch-item">Tìm nhiều tên miền</div>
+                                    <div class="hero-search__switch-item search-domain current">Tìm tên miền</div>
+                                    <div class="hero-search__switch-item search-domains">Tìm nhiều tên miền</div>
                                 </div>
-                                <div class="hero-search__input-wrap">
+                                <div class="hero-search__input-wrap hero-search__domain active">
+                                    <img class="hero-search__ai-mode" src="./images/ai-mode.svg" alt="" />
                                     <input
                                         class="hero-search__input"
                                         type="text"
                                         placeholder="Nhập tên miền bạn muốn tìm kiếm"
                                     />
                                     <div class="hero-search__input-right">
-                                        <div class="hero-search__aimode">
+                                        <div class="hero-search__aimode aimode-domain">
+                                            <img src="./images/stars.svg" alt="" />
+                                            AI mode
+                                        </div>
+                                        <div class="hero-search__btn">
+                                            <img src="./images/search.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hero-search__input-wrap hero-search__domains">
+                                    <img class="hero-search__ai-mode hero-search__ai-mode-domains" src="./images/ai-mode.svg" alt="" />
+                                    <textarea
+                                        placeholder="Tìm kiếm 2 tên miền trở lên, mỗi tên miền cách nhau dấu phẩy hoặc dấu cách (Mỗi tên miền chỉ 63 kí tự - Có thể đăng ký tối đa 20 tên miền)"
+                                        name=""
+                                        id=""
+                                        class="hero-search__input hero-search__input-domains"
+                                    ></textarea>
+                                    <div class="hero-search__input-right">
+                                        <div class="hero-search__aimode aimode-domains">
                                             <img src="./images/stars.svg" alt="" />
                                             AI mode
                                         </div>

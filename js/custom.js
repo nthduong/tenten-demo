@@ -1,4 +1,40 @@
 jQuery(document).ready(function () {
+    jQuery(document).on("click", ".hero-search .hero-search__switch-item", function () {
+        jQuery(".hero-search .hero-search__switch-item").removeClass("current");
+        jQuery(this).addClass("current");
+        jQuery(this).closest(".hero-search__inner").find(".hero-search__input-wrap").removeClass("active");
+    });
+    jQuery(document).on("click", ".hero-search .hero-search__switch-item.search-domain", function () {
+        jQuery(this).closest(".hero-search__inner").find(".hero-search__input-wrap").removeClass("active");
+        jQuery(this)
+            .closest(".hero-search__inner")
+            .find(".hero-search__input-wrap.hero-search__domain")
+            .addClass("active");
+    });
+    jQuery(document).on("click", ".hero-search .hero-search__switch-item.search-domains", function () {
+        jQuery(this).closest(".hero-search__inner").find(".hero-search__input-wrap").removeClass("active");
+        jQuery(this)
+            .closest(".hero-search__inner")
+            .find(".hero-search__input-wrap.hero-search__domains")
+            .addClass("active");
+    });
+
+    jQuery(document).on("click", ".hero-search .aimode-domain", function () {
+        jQuery(this).closest(".hero-search__inner").find(".hero-search__ai-mode").removeClass("active");
+        jQuery(this)
+            .closest(".hero-search__inner")
+            .find(".hero-search__domain .hero-search__ai-mode")
+            .addClass("active");
+    });
+    jQuery(document).on("click", ".hero-search .aimode-domains", function () {
+        jQuery(this).closest(".hero-search__inner").find(".hero-search__ai-mode").removeClass("active");
+        jQuery(this)
+            .closest(".hero-search__inner")
+            .find(".hero-search__domains .hero-search__ai-mode")
+            .addClass("active");
+    });
+
+    //swiper
     const swiper = new Swiper(".hero-domain__inner.swiper", {
         slidesPerView: 5,
         spaceBetween: 20,
