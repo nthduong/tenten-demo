@@ -302,7 +302,12 @@ input:-webkit-autofill {
 }
 @media (max-width: 991.98px) {
   .tenten_20251224 .header {
-    padding: 0px 20px;
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .header {
+    height: 46px;
   }
 }
 .tenten_20251224 .header__inner {
@@ -433,11 +438,14 @@ input:-webkit-autofill {
 @media (max-width: 991.98px) {
   .tenten_20251224 .hero {
     padding: 120px 0px;
+    gap: 20px;
+    border-radius: 0px 0px 60px 60px;
   }
 }
 @media (max-width: 767.98px) {
   .tenten_20251224 .hero {
-    padding: 100px 0px;
+    padding: 80px 0px;
+    border-radius: 0px 0px 40px 40px;
   }
 }
 .tenten_20251224 .hero__inner {
@@ -509,14 +517,17 @@ input:-webkit-autofill {
 
 .tenten_20251224 .hero-search {
   margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 @media (max-width: 767.98px) {
   .tenten_20251224 .hero-search {
     margin-top: 20px;
+    width: 100%;
   }
+}
+.tenten_20251224 .hero-search__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .tenten_20251224 .hero-search__switch {
   display: inline-flex;
@@ -556,6 +567,10 @@ input:-webkit-autofill {
 @media (max-width: 767.98px) {
   .tenten_20251224 .hero-search__input-wrap {
     width: 100%;
+    margin-top: 0px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 10px;
   }
 }
 .tenten_20251224 .hero-search__input {
@@ -567,6 +582,18 @@ input:-webkit-autofill {
   line-height: 140%;
   color: #b0c0de;
 }
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-search__input::placeholder {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-search__input {
+    height: 30px;
+    padding: 0px 0px;
+    font-size: 1.6rem;
+  }
+}
 .tenten_20251224 .hero-search__input-right {
   margin-left: auto;
   display: flex;
@@ -574,6 +601,14 @@ input:-webkit-autofill {
   flex-shrink: 0;
   gap: 10px;
   margin-right: 10px;
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-search__input-right {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 0px;
+  }
 }
 .tenten_20251224 .hero-search__aimode {
   display: flex;
@@ -584,6 +619,11 @@ input:-webkit-autofill {
   color: #b0c0de;
   cursor: pointer;
   transition: all 0.25s ease;
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-search__aimode {
+    font-size: 1.4rem;
+  }
 }
 .tenten_20251224 .hero-search__aimode img {
   transition: all 0.25s ease;
@@ -611,6 +651,12 @@ input:-webkit-autofill {
   .tenten_20251224 .hero-search__btn {
     width: 40px;
     height: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-search__btn {
+    width: 36px;
+    height: 36px;
   }
 }
 .tenten_20251224 .hero-search__btn:hover {
@@ -644,7 +690,6 @@ input:-webkit-autofill {
 }
 @media (max-width: 767.98px) {
   .tenten_20251224 .hero-domain__inner {
-    padding: 20px 10px;
     width: 100%;
   }
 }
@@ -707,10 +752,22 @@ input:-webkit-autofill {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 767.98px) {
+  .tenten_20251224 .domain-item__name {
+    font-size: 1.8rem;
+    line-height: 130%;
+  }
+}
 .tenten_20251224 .domain-item__sale-price {
   color: #fff;
   font-weight: 600;
   line-height: 140%;
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .domain-item__sale-price {
+    font-size: 1.4rem;
+    line-height: 130%;
+  }
 }
 .tenten_20251224 .domain-item__rgl-price {
   color: #fff;
@@ -719,6 +776,12 @@ input:-webkit-autofill {
   font-size: 1.4rem;
   line-height: 20px;
   text-decoration: line-through;
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .domain-item__rgl-price {
+    font-size: 1.2rem;
+    line-height: 20px;
+  }
 }
 .tenten_20251224 .domain-item.hot::before {
   content: "";
@@ -735,6 +798,18 @@ input:-webkit-autofill {
   display: flex;
   gap: 40px;
 }
+@media (max-width: 991.98px) {
+  .tenten_20251224 .hero-promotion {
+    gap: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-promotion {
+    flex-direction: column;
+    margin-top: 0px;
+    align-items: center;
+  }
+}
 .tenten_20251224 .hero-promotion__left {
   display: flex;
   flex-direction: column;
@@ -749,6 +824,11 @@ input:-webkit-autofill {
   left: -30px;
   background-image: url(../images/star.svg);
 }
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-promotion__left::before {
+    background-image: none;
+  }
+}
 .tenten_20251224 .hero-promotion__left::after {
   content: "";
   width: 50px;
@@ -758,10 +838,18 @@ input:-webkit-autofill {
   right: -30px;
   background-image: url(../images/star.svg);
 }
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-promotion__left::after {
+    background-image: none;
+  }
+}
 .tenten_20251224 .hero-promotion__label-group {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+.tenten_20251224 .hero-promotion__label-mobile {
+  width: 230px;
 }
 .tenten_20251224 .hero-promotion__label-2 {
   left: 50%;
@@ -777,6 +865,11 @@ input:-webkit-autofill {
   display: flex;
   gap: 16px;
 }
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-promotion__time {
+    bottom: -35px;
+  }
+}
 .tenten_20251224 .hero-promotion__time-item {
   display: flex;
   justify-content: center;
@@ -791,6 +884,13 @@ input:-webkit-autofill {
   box-shadow: 0px 4px 40px 0px rgba(58, 146, 255, 0.74);
   position: relative;
 }
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-promotion__time-item {
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+  }
+}
 .tenten_20251224 .hero-promotion__time-item:not(:last-child)::after {
   content: "";
   position: absolute;
@@ -801,11 +901,27 @@ input:-webkit-autofill {
   height: 20px;
   width: 20px;
 }
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-promotion__time-item:not(:last-child)::after {
+    top: 14px;
+  }
+}
 .tenten_20251224 .hero-promotion__right {
   position: relative;
 }
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-promotion__right {
+    margin-top: 25px;
+  }
+}
 .tenten_20251224 .hero-promotion__background {
   position: relative;
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-promotion__background {
+    width: 343px;
+    margin: 0 auto;
+  }
 }
 .tenten_20251224 .hero-promotion__decor-1 {
   position: relative;
@@ -833,6 +949,13 @@ input:-webkit-autofill {
   white-space: nowrap;
   padding-left: 20px;
 }
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-promotion__text {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 23.64px;
+  }
+}
 .tenten_20251224 .hero-promotion__text::before {
   content: "";
   position: absolute;
@@ -850,6 +973,12 @@ input:-webkit-autofill {
   font-size: 1.8rem;
   line-height: 140%;
   margin-left: 14px;
+}
+@media (max-width: 767.98px) {
+  .tenten_20251224 .hero-promotion__text-desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
 }
 .tenten_20251224 .hero-promotion__gift-1 {
   position: absolute;

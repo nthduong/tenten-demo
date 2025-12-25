@@ -15,27 +15,22 @@ jQuery(document).ready(function () {
 
         breakpoints: {
             320: {
-                // mobile nhỏ
-                slidesPerView: 3,
+                slidesPerView: 3.1,
                 spaceBetween: 10,
             },
             576: {
-                // mobile lớn
-                slidesPerView: 3,
+                slidesPerView: 3.1,
                 spaceBetween: 15,
             },
             768: {
-                // tablet
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
             1024: {
-                // laptop
                 slidesPerView: 4,
                 spaceBetween: 20,
             },
             1200: {
-                // desktop lớn
                 slidesPerView: 5,
                 spaceBetween: 20,
             },
