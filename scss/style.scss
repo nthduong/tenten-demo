@@ -293,7 +293,7 @@
             display: block;
         }
     }
-    
+
     &__ai-mode-domains {
         margin-top: 10px;
     }
@@ -735,5 +735,217 @@
         top: -15px;
         right: -6px;
         z-index: 1;
+    }
+}
+
+.tenten_20251224 .service {
+    padding-top: 120px;
+
+    @include screen(md) {
+        padding-top: 40px;
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__general {
+        margin-top: 40px;
+        width: 100%;
+
+        @include screen(md) {
+            margin-top: 20px;
+        }
+    }
+}
+
+.tenten_20251224 .service-item {
+    @include flex-center;
+    flex-direction: column;
+
+    &__image-wrap {
+        @include flex-center;
+        position: relative;
+        height: 240px;
+        width: 240px;
+        cursor: pointer;
+        border-radius: 50%;
+
+        @include screen(lg) {
+            width: 165px;
+            height: 165px;
+        }
+        @include screen(md) {
+            width: 145px;
+            height: 145px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-image: url(../images/service-background.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &:hover {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-image: url(../images/service-background-2.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                @include screen(lg) {
+                    z-index: 1;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-image: url(../images/service-background-3.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            & .service-item__decor {
+                display: block;
+            }
+
+            & ~ .service-item__title {
+                background: linear-gradient(269.66deg, #44afff 0.12%, #0066b2 97.71%);
+                background-clip: text;
+                color: transparent;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    &__image {
+        position: relative;
+        z-index: 1;
+
+        @include screen(lg) {
+            width: 90px;
+        }
+
+        @include screen(md) {
+            width: 80px;
+        }
+    }
+
+    &__image-outside {
+        @include flex-center;
+        background: linear-gradient(
+            360deg,
+            rgba(133, 181, 250, 0.3) -1.11%,
+            rgba(174, 206, 255, 0.15) 24.17%,
+            rgba(235, 246, 255, 0.3) 45.07%,
+            rgba(255, 255, 255, 0.3) 100%
+        );
+        border-radius: 50%;
+        z-index: 1;
+        width: 180px;
+        height: 180px;
+
+        @include screen(lg) {
+            width: 128px;
+            height: 128px;
+        }
+
+        @include screen(md) {
+            width: 108px;
+            height: 108px;
+        }
+    }
+
+    &__decor {
+        @include center-width;
+        position: absolute;
+        bottom: -15px;
+        display: none;
+        z-index: 1;
+
+        @include screen(lg) {
+            height: 50px;
+        }
+
+        @include screen(md) {
+            height: 40px;
+            bottom: -8px;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 2rem;
+        margin-top: 30px;
+        text-align: center;
+        line-height: 140%;
+        cursor: pointer;
+        @include screen(md) {
+            margin-top: 10px;
+        }
+
+        @include screen(md) {
+            font-size: 1.6rem;
+        }
+
+        &:hover {
+            background: linear-gradient(269.66deg, #44afff 0.12%, #0066b2 97.71%);
+            background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__desc {
+        text-align: center;
+        font-weight: 500;
+        line-height: 24px;
+        margin-top: 10px;
+
+        @include screen(md) {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 0px;
+        }
+
+        & strong {
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 30px;
+            background: rgba(0, 102, 178, 1);
+            background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @include screen(md) {
+                font-size: 1.4rem;
+            }
+        }
     }
 }

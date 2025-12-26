@@ -16,9 +16,8 @@ body {
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter18pt-Regular.woff2') format('woff2'),
-        url('../fonts/Inter18pt-Regular.woff') format('woff');
+    font-family: "Inter";
+    src: url("../fonts/Inter18pt-Regular.woff2") format("woff2"), url("../fonts/Inter18pt-Regular.woff") format("woff");
 }
 
 a {
@@ -55,4 +54,28 @@ input {
 }
 input:-webkit-autofill {
     transition: background-color 9999s ease-in-out 0s;
+}
+@media (min-width: 1550px) {
+    .tenten_20251224 .container {
+        width: 1520px;
+    }
+}
+
+.tenten_20251224 .tenten-heading {
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 120%;
+
+    @include screen(md) {
+        font-size: 2.4rem;
+        line-height: 140%;
+    }
+
+    & strong {
+        background: linear-gradient(269.66deg, #44afff 0.12%, #0066b2 97.71%);
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
