@@ -5,7 +5,7 @@ $grid-breakpoints: (
     lg: 992px,
     xl: 1200px,
     xxl: 1400px,
-    xxxl:1600px
+    xxxl: 1600px,
 );
 
 @mixin screen($key) {
@@ -36,4 +36,10 @@ $grid-breakpoints: (
 @mixin center-width {
     left: 50%;
     transform: translateX(-50%);
+}
+@mixin text-g {
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -1276,4 +1276,183 @@ input:-webkit-autofill {
   }
 }
 
+.tenten_20251224 .why-choose {
+  padding-top: 120px;
+}
+.tenten_20251224 .why-choose__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tenten_20251224 .why-choose__general {
+  width: 100%;
+  margin-top: 40px;
+}
+.tenten_20251224 .why-choose__list {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+}
+
+.tenten_20251224 .why-choose-item {
+  position: relative;
+  width: 25%;
+  box-shadow: 0px 0px 22.94px 0px rgba(255, 255, 255, 0.6) inset;
+  border-radius: 32px;
+  overflow: hidden;
+  height: 515px;
+  cursor: pointer;
+  transition: 0.8s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.tenten_20251224 .why-choose-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(../images/why-chose-bg2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 5.83px 5.83px 0px rgba(255, 255, 255, 0.3) inset;
+}
+.tenten_20251224 .why-choose-item__decor-1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tenten_20251224 .why-choose-item__media {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.tenten_20251224 .why-choose-item__image {
+  position: relative;
+  z-index: 1;
+  height: 175px;
+  transition: all 1s ease;
+}
+.tenten_20251224 .why-choose-item__decor-2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+}
+.tenten_20251224 .why-choose-item__decor-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+}
+.tenten_20251224 .why-choose-item__title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 140%;
+  background: linear-gradient(269.66deg, #44afff 0.12%, #0066b2 97.71%);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.tenten_20251224 .why-choose-item__desc {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 140%;
+}
+.tenten_20251224 .why-choose-item.current {
+  width: 75%;
+}
+.tenten_20251224 .why-choose-item__content-sub {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 20px;
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+}
+.tenten_20251224 .why-choose-item__number {
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 100%;
+  background: rgb(137, 192, 255);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tenten_20251224 .why-choose-item__subtitle {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 140%;
+  background: rgb(137, 192, 255);
+  text-align: center;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tenten_20251224 .why-choose-item.current::before {
+  background-image: url(../images/why-chose-bg.png);
+}
+.tenten_20251224 .why-choose-item__content {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tenten_20251224 .why-choose-item.current .why-choose-item__content {
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  bottom: 30px;
+  position: absolute;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 20px;
+  width: 90%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  border: 2px solid;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(241, 242, 246, 0) 100%);
+  box-shadow: 0px 10px 30px 0px rgba(68, 135, 250, 0.1);
+  backdrop-filter: blur(40.3811836243px);
+  opacity: 1;
+  visibility: visible;
+}
+.tenten_20251224 .why-choose-item.current .why-choose-item__decor-1 {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transform: translateY(0);
+}
+.tenten_20251224 .why-choose-item.current .why-choose-item__decor-2 {
+  opacity: 1;
+  visibility: visible;
+}
+.tenten_20251224 .why-choose-item.current .why-choose-item__decor-3 {
+  opacity: 0;
+  visibility: hidden;
+}
+.tenten_20251224 .why-choose-item.current .why-choose-item__media {
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+}
+.tenten_20251224 .why-choose-item.current .why-choose-item__content-sub {
+  opacity: 0;
+  visibility: hidden;
+}
+.tenten_20251224 .why-choose-item.current .why-choose-item__image {
+  height: 269px;
+}
+
 /*# sourceMappingURL=style.css.map */
