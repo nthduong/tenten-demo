@@ -108,39 +108,4 @@ jQuery(document).ready(function () {
             },
         },
     });
-    const swiper3 = new Swiper(".why-choose__general.swiper", {
-        slidesPerView: 4,
-        speed: 1200,
-        loop: true,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
-
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-            },
-
-            576: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-            },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-            },
-            1200: {
-                slidesPerView: 4,
-            },
-            1400: {
-                slidesPerView: 4,
-            },
-        },
-    });
 });
